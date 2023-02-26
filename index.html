@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Events</title>
+    <link rel="icon" href="./assets/img/Ico Amazing Events.png" type="image/x-icon">
+    <!--============== Bootstrap ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--============== Unicons Icons ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+</head>
+<body class="container">
+    <header class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 shadow">
+            <div class="container-fluid">
+                <div class="col-2">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/Logo Amazing Events.png" class="d-inline-block align-text-top" alt="Logo" height="24">
+                    </a>
+                </div>
+                <div>
+                    <div class="justify-content-end d-flex pb-2">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item align-self-end mb-2">
+                                <a class="btn btn-sm btn-outline-primary mx-2 active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item align-self-end mb-2">
+                                <a class="btn btn-sm btn-outline-primary mx-2" aria-current="page" href="./upcomingevents.html">Upcoming Events</a>
+                            </li>
+                            <li class="nav-item align-self-end mb-2">
+                                <a class="btn btn-sm btn-outline-primary mx-2" aria-current="page" href="./pastevents.html">Past Events</a>
+                            </li>
+                            <li class="nav-item align-self-end mb-2">
+                                <a class="btn btn-sm btn-outline-primary mx-2" aria-current="page" href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item align-self-end mb-2">
+                                <a class="btn btn-sm btn-outline-primary mx-2" aria-current="page" href="./stats.html">Stats</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container pb-5">
+        <section class="bg-secondary text-center pb-5 pt-5">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <!-- <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div> -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                        <div class="carousel-caption d-md-block">
+                            <h2 class="text-title">Home</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                        <div class="carousel-caption d-md-block">
+                            <h2 class="text-title">Upcoming Events</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                        <div class="carousel-caption d-md-block">
+                            <h2 class="text-title">Past Events</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                        <div class="carousel-caption d-md-block">
+                            <h2 class="text-title">Contact</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                        <div class="carousel-caption d-md-block">
+                            <h2 class="text-title">Stast</h2>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid col-md-12">
+                    <div class="btn-group mb-2" role="group" aria-label="Basic checkbox toggle button group">
+                        <div class="col-4">
+                            <input type="checkbox" class="btncheck" id="btncheck1" autocomplete="off">
+                            <label class="checkbox" for="btncheck1">Category 1</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="checkbox" class="btncheck" id="btncheck2" autocomplete="off">
+                            <label class="checkbox" for="btncheck2">Category 2</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="checkbox" class="btncheck" id="btncheck3" autocomplete="off">
+                            <label class="checkbox" for="btncheck3">Category 3</label>
+                        </div>
+                    </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary uil uil-search" type="submit">
+                            <p class="d-none">Buscar</p>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </section>
+        <section id="card-events">
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/Costume_Party.jpg" class="card-img-top card__img" alt="Costume Party" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Costume Party</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="card-footer row-cols-1">
+                            <div class="position-absolute pt-2">
+                                <h5 class="text-muted">Price $0000</h5>
+                            </div>
+                            
+                            <div class="text-end">
+                                <a href="#" class="btn btn-sm btn-outline-primary mx-2">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/Cinema.jpg" class="card-img-top card__img" alt="Cinema">
+                        <div class="card-body">
+                            <h5 class="card-title">Cinema</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="card-footer row-cols-1">
+                            <div class="position-absolute pt-2">
+                                <h5 class="text-muted">Price $0000</h5>
+                            </div>
+                            
+                            <div class="text-end">
+                                <a href="#" class="btn btn-sm btn-outline-primary mx-2">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/Food_Fair.jpg" class="card-img-top card__img" alt="Food Fair">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Fair</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </div>
+                        <div class="card-footer row-cols-1">
+                            <div class="position-absolute pt-2">
+                                <h5 class="text-muted">Price $0000</h5>
+                            </div>
+                            
+                            <div class="text-end">
+                                <a href="#" class="btn btn-sm btn-outline-primary mx-2">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/Marathon.jpg" class="card-img-top card__img" alt="Marathon">
+                        <div class="card-body">
+                            <h5 class="card-title">Marathon</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="card-footer row-cols-1">
+                            <div class="position-absolute pt-2">
+                                <h5 class="text-muted">Price $0000</h5>
+                            </div>
+                            
+                            <div class="text-end">
+                                <a href="#" class="btn btn-sm btn-outline-primary mx-2">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/Museum_Tour.jpg" class="card-img-top card__img" alt="Museum Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Museum Tour</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="card-footer row-cols-1">
+                            <div class="position-absolute pt-2">
+                                <h5 class="text-muted">Price $0000</h5>
+                            </div>
+                            
+                            <div class="text-end">
+                                <a href="#" class="btn btn-sm btn-outline-primary mx-2">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/Music_Concert.jpg" class="card-img-top card__img" alt="Music Concert">
+                        <div class="card-body">
+                            <h5 class="card-title">Music Concert</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="card-footer row-cols-1">
+                            <div class="position-absolute pt-2">
+                                <h5 class="text-muted">Price $0000</h5>
+                            </div>
+                            
+                            <div class="text-end">
+                                <a href="#" class="btn btn-sm btn-outline-primary mx-2">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container d-flex bg-body-tertiary p-3">
+        <div class="col-6">
+            <ul class="col-12 d-flex">
+                <li class="mx-2">
+                    <a href="https://www.instagram.com/" class="nav__link text-white bg-dark">
+                        <p class="d-none">Instagram</p>
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="https://www.facebook.com/" class="nav__link text-white bg-dark ">
+                        <p class="d-none">Facebook</p>
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="https://web.whatsapp.com/" class="nav__link text-white bg-dark">
+                        <p class="d-none">Whatsapp</p>
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-6 text-end">
+            <h3 class="mx-4">Cohort</h3>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
