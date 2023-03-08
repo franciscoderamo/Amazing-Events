@@ -104,7 +104,7 @@ footer h3{
 }
 
 .card__img{
-    height: 33%;
+    height: 200px;
 }
 
 .text-title{
@@ -112,6 +112,23 @@ footer h3{
     color: black;
     font-weight: revert;
     padding-bottom: .75rem;
+}
+
+.line__clamp {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+.card-text.line__clamp {
+    padding-bottom: 0.16rem;
+}
+
+.objetfitcover > img{
+	height: 180px;
+	object-fit: cover;
 }
 
 .checkbox{
@@ -139,7 +156,6 @@ footer h3{
 
 #form{
     width: 66%;
-    /* margin: 0 auto; */
 }
 
 th, tr, td{
@@ -166,26 +182,8 @@ tr, td{
     color: #e5026d;
 }
 
-.arrows{
-    font-size: 2rem;
-    color: black;
-    position: absolute;
-    top: 130px;
-}
-
-.arrows-button-next, .arrows-button-prev{
-    content: "";
-}
-
-.arrows-button-next{
-    right: 10rem;
-}
-
-.arrows-button-prev{
-    left: 20rem;
-}
-
-.arrows-button-prev,
-.arrows-button-next {
-    outline: none;
+@media (max-width: 758px) {
+    .objetfitcover > img{
+        height: 150px;
+    }
 }
