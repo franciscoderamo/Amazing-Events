@@ -87,7 +87,15 @@ table {
     height: 100%;
 }
 
+.table-responsive{
+    border: 1px solid black;
+}
+
 /*  --- Own styles --- */
+
+html{
+    height: 100%;
+}
 
 h1{
     font-size: 2rem;
@@ -99,6 +107,17 @@ ul, li {
 
 a {
     text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+
+footer {
+    margin-top: auto;
 }
 
 footer h3{
@@ -171,11 +190,11 @@ footer h3{
 }
 
 th, tr, td{
-    border: 1px solid black ;
+    border-bottom: 1px solid black;
 }
 
 th{
-    font-size: 1.5em;
+    font-size: 1rem;
     height: 40px;
 }
 
@@ -192,6 +211,10 @@ tr, td{
     margin-right: 10px;
     padding: 0.1rem;
     color: #e5026d;
+}
+
+.stats__title{
+    font-size: 1.5rem;
 }
 
 @media (max-width: 758px) {

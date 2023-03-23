@@ -1,29 +1,26 @@
+// Captured constants and variables
+const data = "https://mindhub-xj03.onrender.com/api/amazing";
 let params = new URLSearchParams(location.search)//Get parameters from url
-let id = params.get("id")
-let card = data.events.find(info => info._id == id)
+let id = params.get("id");
 let container = document.getElementById("card__details");
-
 let html = "";
 
-html +=  `<div class="row g-0">
-            <div class="col-md-6">
-                <img src="${card.image}" class="img-fluid rounded-start" alt="Museum Tour" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="card-body">
-                    <h2 class="card-title fs-2">${card.name}</h2>
-                    <p class="card-text pb-4">${card.description}</p>
-                    <h3 class="card-text pb-1 fs-5">${card.category} at ${card.place}.</h3>
-                    <h3 class="card-text pb-4">Date: ${card.date}.</h3>
-                    <div class="position-absolute pt-3">
-                        <h2 class="text-muted fs-5"><b>Price: $${card.price}</b></h2>
-                    </div>
+async function fetchData(){
+    try {
+    // Fetch
+    fetch(urlEvents)
+    .then((response) => response.json())
+    .then((data) => {
 
-                    <div class="text-end pt-2">
-                        <a href="/contact.html" class="btn btn-sm btn-outline-primary mx-2 fs-5">Contact</a>
-                    </div>
-                </div>
-            </div>
-            </div>`;
+    let card = data.events.find(info => info._id == id);
 
-container.innerHTML = html
+    // Function calls 
+    printCardDetail(card);
+    })
+    }
+    catch (error) {
+        console.log("Error: " + error + ". Could not connect to the API.");
+    }
+}
+
+fetchData();
